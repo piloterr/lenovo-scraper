@@ -69,7 +69,7 @@ response = requests.get(
     params={
         "query": "https://www.lenovo.com/fr/fr/p/workstations/thinkstationp/thinkstation-p5-gen-2-intel-tower-workstation/len102s0024",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
@@ -199,7 +199,7 @@ response = requests.get(
     params={
         "query": "thinkpad",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
